@@ -7,8 +7,12 @@ function addTask() {
 	li.textContent=input;
 	if(input!=""){
 		list.appendChild(li);
+		
 	}else{
 		alert("Empty Task");
 	}
+}
 
+function reset() {
+	document.getElementById("newTodoInput").value="";
 }
