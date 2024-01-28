@@ -7,12 +7,11 @@ function addTask() {
 	li.textContent=input;
 	if(input!=""){
 		list.appendChild(li);
-		
+		document.getElementById("newTodoInput").value="";
 	}else{
 		alert("Empty Task");
 	}
+	
 }
 
-function reset() {
-	document.getElementById("newTodoInput").value="";
-}
+
